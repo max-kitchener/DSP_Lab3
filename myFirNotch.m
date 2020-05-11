@@ -29,7 +29,7 @@ wo = (2*pi*fo)/fs;
 %h(n) = x(n)-2cos(wo)x(n-1)+x(n-2)
 %h(n) = b(0)x(n)+b(1)x(n-1)+b(2)x(n-2)
 
-%From this the filter coefficient b can be extrapolated as:
+%From this the filter coefficient b can be calculated:
 b(1) = 1;           %x(n)   
 b(2) = -2*cos(wo);  %x(n-1)
 b(3) = 1;           %x(n-2)
